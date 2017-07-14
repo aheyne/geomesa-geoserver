@@ -13,6 +13,7 @@ import org.geotools.filter.capability.FunctionNameImpl
 import org.geotools.filter.capability.FunctionNameImpl._
 
 import java.lang.{Float => jFloat}
+
 class GeoMesaFastMark extends FunctionExpressionImpl(
   new FunctionNameImpl("geomesaFastMark",
   parameter("geomesaFastMark", classOf[String]),
