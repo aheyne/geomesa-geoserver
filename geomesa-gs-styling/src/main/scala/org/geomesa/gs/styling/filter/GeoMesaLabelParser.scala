@@ -95,7 +95,7 @@ object GeoMesaLabelParser {
     } else {
       // expr could be an Int/Float/Double
       val prop = expr.toString
-      // If there is a letter in the prop value, we can't parse so short circuit
+      // Only attempt parse if there is a decimal point
       if (!p.matcher(prop).matches || prop == "") {
         prop
       } else {
